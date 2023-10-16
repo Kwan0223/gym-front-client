@@ -1,0 +1,16 @@
+.card-container {
+    display: flex;
+    flex-direction: column; /* This makes the cards stack vertically */
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    box-sizing: border-box;
+    margin: 1em auto; /* The auto value centers the card horizontally */
+    width: 70%; /* Set width to 80% */
+}
+
+.main-container{
+    width: 100%;
+}

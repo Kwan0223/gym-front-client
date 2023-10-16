@@ -1,0 +1,33 @@
+.footer {
+    background-color:  #282c34;  /* 밝은 회색으로 변경 */
+    padding: 10px 0;            /* 높이를 15% 줄이기 위해 패딩을 10px로 변경 */
+    color: #ffffff;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #61dafb;
+}
+
+.footer-info {
+    font-size: 0.9rem;
+}

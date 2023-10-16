@@ -1,0 +1,168 @@
+.card {
+    position: relative;
+}
+
+.card-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 ratio */
+    overflow: hidden;
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    width: 51%;
+    margin-top: 10%;
+    height: 100%;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .card {
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .card {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        width: 1140px;
+    }
+}
+
+.card-trainer {
+    position: relative;
+    height: 500px;
+}
+
+.card-trainer .card-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 112.5%;
+    overflow: hidden;
+}
+
+.card-trainer .card-body {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.button-group {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.button-group button {
+    border-radius: 25%;
+    margin-right: 10px;
+    padding: 10px 20px;
+}
+
+.trainer-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.prize-history-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.prize-history-label-content div {
+    text-align: right;
+}
+
+.modal-header {
+    text-align: right;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+/* trainer-info 스타일 추가 */
+.trainer-info {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.button-container-notification button {
+    text-align: center;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-right: 0.7%;
+    padding: 1% 2.2%;
+    font-size: 1.1vw;
+    cursor: pointer;
+    width: 13%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.reservationComplete {
+    background-color: #007bff;
+}
+
+.reservationCancel {
+    background-color: #ff0000;
+}
+
+
+
+.button-trainer{
+    background-color: #4CAF50; /* 파란색 배경 */
+    border-radius: 20px;
+    margin: 5%;
+    width: 100%;
+    top: 10%;
+
+}
+
+.trainer-nameTag {
+    margin-bottom: 20px; /* 간격 추가 */
+    top: 10%;
+}
+
+.button-container-trainer {
+    margin-bottom: 20px; /* 간격 추가 */
+    top: -30%;
+}

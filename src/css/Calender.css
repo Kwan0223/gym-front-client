@@ -1,0 +1,181 @@
+.react-datepicker {
+    position: fixed;
+    align-items: center;
+    top: 50px;
+    left: 50%;
+    width: 680px;
+    height: 385px;
+    border: transparent;
+    border-radius: 15px;
+
+}
+
+.react-datepicker__input-container > input {
+    position: absolute;
+    text-align: center;
+    color: transparent;
+    font-size: 15px;
+    left: 50%;
+    top: 0px;
+    /*transform: translateX(-50%);*/
+    width: 200px;
+    height: 57px;
+    border: transparent;
+    border-radius: 35px;
+    background-color: transparent;
+}
+.react-datepicker__input-container > input:focus {
+    outline: white;
+}
+
+.react-datepicker__header {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.react-datepicker__close-icon::after {
+    position: fixed;
+    right: 870px;
+    top: 110px;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    background-color: #a3a2a2;
+}
+
+.react-datepicker__navigation--previous {
+    left: 10px; /* Adjust as per your needs */
+}
+
+.react-datepicker__navigation--next {
+    right: -140px; /* Adjust as per your needs */
+}
+
+
+
+.react-datepicker__month-container {
+    width: 200px; /* double the original width */
+    height: 100%; /* double the original height */
+}
+
+.react-datepicker__day, .react-datepicker__day-name {
+    width: 7rem; /* adjust according to your needs */
+    height: 3rem; /* adjust according to your needs */
+    line-height: 3rem; /* adjust according to your needs */
+}
+
+.react-datepicker__current-month {
+    font-size: 2rem; /* adjust according to your needs */
+}
+
+.react-datepicker__navigation {
+    width: 1rem; /* adjust according to your needs */
+    height: 3rem; /* adjust according to your needs */
+}
+
+.my-custom-datepicker {
+    display: flex;
+    flex-direction: column;
+}
+.right-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    /*top : 100px;*/
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.time-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 175px;
+    color: #00ff00;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.time-button.selected {
+    background-color: #00ff00;
+    color: #fff;
+}
+
+.time-button:hover {
+    background-color: #00ff00;
+    color: #fff;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+    border: 1px solid black;
+    border-radius: 5px; /* 끝 부분을 둥글게 */
+
+
+}
+
+.input-container div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 0px;
+}
+
+.button-container-notification {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centers the buttons */
+
+}
+.time-button.booked {
+    background-color: red;
+    color: white;
+    cursor: not-allowed; /* 마우스 포인터를 '금지' 아이콘으로 변경 */
+    opacity: 0.7; /* 버튼을 약간 투명하게 만들어 예약됨을 더 명확하게 나타냅니다. */
+}
+
+/* 선택된 버튼과 예약된 버튼의 스타일이 충돌하는 경우를 대비하여 선택된 버튼의 스타일을 더 강화시킵니다. */
+.time-button.selected {
+    background-color: blue; /* 선택된 버튼의 배경색을 파란색으로 가정합니다. */
+    color: white;
+}
+
+.time-button-check {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px; /* Add some margin to separate it from the time slots */
+}
+
+.returnDate{
+    margin-right: 20px;
+    background-color: red;
+
+}
+.notificationCheck{
+    background-color: blue; /* 선택된 버튼의 배경색을 파란색으로 가정합니다. */
+
+}
+
+.input-container > div {
+    margin: 15px;  /* 상하 좌우 간격 조정 */
+}
+
+.input-container label {
+    font-size: 2em;  /* 텍스트 크기 2배로 조정 */
+    font-weight: bold;  /* 텍스트를 두껍게 */
+}

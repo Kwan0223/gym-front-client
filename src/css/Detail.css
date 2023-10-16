@@ -1,0 +1,83 @@
+.gymContent {
+    padding-top: 50px;
+}
+
+.gym {
+    height: 100px;
+}
+
+.gym h2 {
+    padding-right: 1300px;
+}
+
+.gymImgs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    height: 60vh;
+    margin-bottom: 20px; /* Add space between the images and the buttons */
+}
+
+.leftImages, .rightUpImages {
+    flex: 1;
+    height: 100%;
+}
+.rightDownImages {
+    flex: 1;
+    height: 98%;
+}
+
+.leftImages img, .rightUpImages img, .rightDownImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightDownImages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rightDownImages img {
+    height: 50%;
+}
+
+.point-Buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.point-Button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* 트랜지션 효과 추가 */
+}
+
+.point-Button:hover {
+    background-color: #ddd; /* 호버 효과 추가 */
+}
+
+/* 헬스장 정보 활성 버튼 스타일 */
+.point-Button.point-Info.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* 트레이너 정보 활성 버튼 스타일 */
+.point-Button.point-TrainerInfo.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.selected-Content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
